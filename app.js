@@ -1,5 +1,6 @@
 // ===== CONFIG: edit here. Add affiliate params to URLs later. =====
 const CONFIG = {
+  signupEndpoint: "", // set to the Worker URL to turn on signup. Empty = "Coming soon".
   showSponsorBanner: false, // set true to show the top sponsor banner
   sponsorBannerText: "Example sponsor message here. (Placeholder)",
   tools: {
@@ -90,3 +91,21 @@ document.getElementById("role-list").innerHTML = Object.entries(ROLES).map(([id,
 document.querySelectorAll(".role").forEach(b=>b.onclick=()=>render(b.dataset.id, true));
 if (CONFIG.showSponsorBanner){ const s=document.getElementById("sponsor-banner"); s.hidden=false; document.getElementById("sponsor-text").textContent=CONFIG.sponsorBannerText; }
 render(new URLSearchParams(location.search).get("role") || "student");
+
+(function signup(){
+  const f=document.getElementById("signup-form"), m=document.getElementById("signup-msg");
+  if (!f || !CONFIG.signupEndpoint) return;
+  const [email,,btn]=f.elements; email.disabled=false; btn.disabled=false; btn.textContent="Sali na";
+  m.textContent="Libre. Isang tip lang kada linggo.";
+  f.onsubmit=async e=>{
+    e.preventDefault();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email.value.trim())){ m.textContent="Pakicheck ang email mo."; return; }
+    btn.disabled=true; m.textContent="Sandali lang...";
+    try{
+      const r=await fetch(CONFIG.signupEndpoint,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({email:email.value.trim(),website:f.elements.website.value})});
+      m.textContent=r.ok?"Salamat! Nasa list ka na.":"May error. Subukan ulit mamaya.";
+      if(r.ok) f.reset();
+    }catch{ m.textContent="May error. Subukan ulit mamaya."; }
+    btn.disabled=false;
+  };
+})();

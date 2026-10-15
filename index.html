@@ -57,8 +57,10 @@
   <div class="wrap">
     <div class="signup">
       <h3>Gusto mo ng bagong AI tip every week?</h3>
-      <p class="muted">Email signup: coming soon.</p>
-      <form onsubmit="return false"><input type="email" placeholder="Email mo" disabled><button disabled>Coming soon</button></form>
+      <p class="muted" id="signup-msg">Email signup: coming soon.</p>
+      <form id="signup-form" novalidate><input type="email" name="email" placeholder="Email mo" required disabled>
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button disabled>Coming soon</button></form>
     </div>
     <p class="small">May ilang links na affiliate o sponsored. Lagi naming sinasabi kung sponsored.</p>
     <p class="small">© 2026 AI Starter PH</p>

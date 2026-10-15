@@ -1,0 +1,6 @@
+name = "ai-starter-ph-signup"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+AUDIENCE_ID = "fe0cb8d5-e4d7-4c73-ad76-742a1336860f"

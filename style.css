@@ -73,3 +73,4 @@ footer .muted{color:#9aa0c0}.small{font-size:.82rem;color:#8a90ad;margin-top:8px
 }
 @media(max-width:480px){.card{padding:18px}.tool{flex-wrap:wrap}.tool .info{flex:1 1 calc(100% - 60px)}.try{width:100%;text-align:center}}
 .today-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}.today-head h3{margin:0}.daytag{background:#16a34a;color:#fff;font-weight:800;font-size:.8rem;padding:4px 10px;border-radius:999px}.done-all{background:linear-gradient(135deg,#f3f0ff,#ecfdf3)}button.btn{font:inherit;font-weight:700;cursor:pointer}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
