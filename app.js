@@ -19,23 +19,23 @@ const CONFIG = {
 const ROLES = {
   student: { icon:"🎓", label:"Student",
     tools:[["chatgpt","Pang-explain ng mahirap na lesson."],["notebooklm","I-upload ang notes mo. Gagawa ito ng reviewer."],["perplexity","Research na may sources."]],
-    today:"Kunin ang pinakamahirap na topic mo ngayon. Sabihin sa ChatGPT: \"Explain mo ito na parang Grade 6 ako.\"",
+    tasks:["Kunin ang pinakamahirap na topic mo ngayon. Sabihin sa ChatGPT: \"Explain mo ito na parang Grade 6 ako.\"", "Buksan ang NotebookLM. I-upload ang notes o PDF ng isang subject. Itanong: \"Ano ang 5 pinaka importanteng points dito?\"", "Sabihin sa ChatGPT: \"Gawan mo ako ng 10-item quiz tungkol sa topic na ito.\" Sagutan mo ito nang walang kopya.", "Pumili ng topic para sa assignment mo. I-search ito sa Perplexity. Buksan ang 2 sources na binigay nito.", "I-paste ang outline ng essay mo sa ChatGPT. Itanong: \"Ano ang kulang dito?\" Ikaw pa rin ang magsusulat.", "Ilista ang lahat ng deadlines mo ngayong linggo. Ipagawa sa AI ang simpleng study schedule.", "Isipin kung aling tool ang pinaka nakatulong. Gamitin ulit ito bukas sa isang bagong lesson."],
     days:["Gumawa ng ChatGPT account at magtanong ng isang lesson.","I-upload ang notes mo sa NotebookLM.","Gumawa ng 10-item quiz gamit ang AI.","Mag-research ng isang topic sa Perplexity.","Ipa-check sa AI ang outline ng essay mo.","Gumawa ng study schedule para sa linggo.","Balikan kung ano ang pinaka nakatulong. Ulitin ito."] },
   va: { icon:"💼", label:"VA / Freelancer",
     tools:[["chatgpt","Pang-draft ng emails at proposals."],["claude","Maganda sa mahahabang docs at summary."],["canva","Mabilis na graphics para sa client."]],
-    today:"Isulat ang isang proposal gamit ang ChatGPT. Ikaw pa rin ang mag-edit bago i-send.",
+    tasks:["Gumawa ng account sa ChatGPT at Claude. Itanong sa bawat isa: \"Paano mo ako matutulungan bilang VA?\"", "Sabihin sa ChatGPT: \"Gawan mo ako ng friendly email template para mag-follow up sa client.\" I-save ito.", "Kumuha ng mahabang doc o email thread. Ipa-summarize sa Claude sa 5 bullet points.", "Buksan ang Canva. Pumili ng template at gumawa ng isang social media post para sa sample client.", "Isulat ang 3 tasks na lagi mong ginagawa. Itanong sa ChatGPT kung paano ito mapapabilis.", "I-update ang profile mo sa freelance site. Idagdag ang \"AI-assisted writing at design\" sa skills.", "Maghanap ng isang gig na kailangan ng AI skill. Isulat ang proposal kasama ang ChatGPT. Ikaw ang mag-edit bago i-send."],
     days:["Gumawa ng account sa ChatGPT at Claude.","Gumawa ng email template para sa clients.","Ipa-summarize sa Claude ang isang mahabang doc.","Gumawa ng social post design sa Canva.","Ilista ang 3 tasks mo na pwedeng bilisan ng AI.","I-update ang profile mo. Ilagay ang AI skills.","Mag-apply sa isang gig na may AI skill."] },
   seller: { icon:"🛒", label:"Online Seller",
     tools:[["chatgpt","Pang-sulat ng Taglish captions."],["canva","Product photos at posters."],["capcut","Short videos para sa TikTok at Reels."]],
-    today:"Pumili ng isang product. Ipagawa sa ChatGPT ang 3 Taglish captions para dito.",
+    tasks:["Pumili ng isang product. Ipagawa sa ChatGPT ang 3 Taglish captions para dito.", "Kunan ng photo ang product mo. Linisin ang background gamit ang Canva.", "Buksan ang CapCut. Gumawa ng 15-second video ng product mo gamit ang isang template.", "Ilista ang 5 tanong na lagi sa'yo ng buyers. Ipagawa sa ChatGPT ang maikling sagot sa bawat isa.", "Itanong sa ChatGPT: \"Bigyan mo ako ng 5 promo ideas para sa maliit na online shop.\" Pumili ng isa.", "Mag-post ng isang caption o video na ginawa mo kasama ang AI.", "Tingnan ang posts mo ngayong linggo. Alamin kung alin ang may pinakamaraming views. Gumawa ulit ng ganun."],
     days:["Gumawa ng 3 captions para sa best seller mo.","Linisin ang product photo sa Canva.","Gumawa ng 15-second video sa CapCut.","Gumawa ng auto-reply template para sa FAQs.","Mag-isip ng promo idea kasama ang AI.","Mag-post ng isang AI-made na content.","Tingnan kung alin ang may pinakamaraming views."] },
   gamer: { icon:"🎮", label:"Gamer / Creator",
     tools:[["capcut","Edit ng clips na may auto captions."],["canva","Thumbnails na pang-click."],["gemini","Ideas para sa content at titles."]],
-    today:"Kunin ang best clip mo. I-edit sa CapCut na may auto captions.",
+    tasks:["Mag-download ng CapCut. Kunin ang best clip mo at lagyan ng auto captions.", "Buksan ang Canva. Gumawa ng thumbnail na may malaking text at mukha mo o ng character.", "Sabihin sa Gemini: \"Bigyan mo ako ng 10 video ideas para sa [game mo].\" Pumili ng 3.", "Ipagawa sa Gemini ang 3 title options at 5 hashtags para sa susunod mong video.", "Kumuha ng isang mahabang video mo. Gupitin sa CapCut ang pinaka exciting na 30 seconds.", "I-post ang short clip mo. Basahin ang comments at sagutin ang kahit 3.", "Itanong sa Gemini: \"Gawan mo ako ng simpleng content plan para sa 1 linggo.\" I-save ito."],
     days:["Mag-download ng CapCut at i-try ang auto captions.","Gumawa ng thumbnail sa Canva.","Humingi sa Gemini ng 10 video ideas.","Ipagawa ang title at hashtags sa AI.","Gumawa ng short clip mula sa long video.","Mag-post at tingnan ang reactions.","Gumawa ng simpleng content plan para sa susunod na linggo."] },
   office: { icon:"🏢", label:"Office Worker",
     tools:[["gemini","Tulong sa emails at Google Docs."],["chatgpt","Pang-draft ng reports at slides outline."],["grammarly","Check ng grammar bago mag-send."]],
-    today:"Kunin ang isang email na mahirap isulat. Ipa-draft sa Gemini. Ikaw ang mag-final check.",
+    tasks:["Kunin ang isang email na mahirap isulat. Ipa-draft sa Gemini. Ikaw ang mag-final check.", "Kumuha ng mahabang meeting notes. Ipa-summarize sa AI sa 5 bullet points at action items.", "Sabihin sa ChatGPT: \"Gawan mo ako ng outline para sa report tungkol sa [topic].\"", "I-paste ang isang doc mo sa Grammarly. Ayusin ang mga mali na nakita nito.", "Isipin ang isang spreadsheet task mo. Itanong sa AI kung anong formula ang gagamitin.", "Ilista ang 5 tasks na paulit-ulit mong ginagawa sa trabaho.", "Pumili ng isang task mula sa listahan. Gawin ito with AI simula ngayon."],
     days:["Mag-draft ng isang email gamit ang AI.","Ipa-summarize ang mahabang meeting notes.","Gumawa ng report outline sa ChatGPT.","I-check ang grammar ng doc mo sa Grammarly.","Gumawa ng formula sa spreadsheet sa tulong ng AI.","Ilista ang paulit-ulit mong tasks.","Pumili ng isang task na laging gagawin mo with AI."] }
 };
 
@@ -57,17 +57,30 @@ function render(id, scroll){
   plan.innerHTML = `
     <div class="plan-head"><h2>${r.icon} Starter plan mo: ${r.label}</h2><p class="muted">Simple lang. Isang hakbang kada araw.</p></div>
     <div class="plan-grid">
-      <div class="card today wide"><h3>✅ Gawin mo ngayon</h3><p>${r.today}</p></div>
+      <div class="card today wide" id="today"></div>
       <div class="card"><h3>🧰 3 libreng AI tools</h3>${r.tools.map(t=>toolRow(CONFIG.tools[t[0]],t[1])).join("")}</div>
       <div class="card"><h3>📅 7-day path mo</h3><div class="progress"><div id="bar"></div></div>
         <ol class="timeline">${r.days.map((d,i)=>`<li class="${done.includes(i)?"done":""}"><input type="checkbox" id="d${i}" data-i="${i}" ${done.includes(i)?"checked":""}><label for="d${i}"><b>Day ${i+1}:</b> ${d}</label></li>`).join("")}</ol></div>
       <div class="card featured wide"><h3><span class="tag">Sponsored</span>Featured tool</h3>${toolRow(f, f.text, true)}</div>
     </div>`;
   const bar = () => document.getElementById("bar").style.width = (plan.querySelectorAll(".timeline input:checked").length/7*100)+"%";
-  bar();
+  const today = () => {
+    const d=[...plan.querySelectorAll(".timeline input:checked")].map(x=>+x.dataset.i);
+    const next=[0,1,2,3,4,5,6].find(i=>!d.includes(i)); const el=document.getElementById("today");
+    if (next===undefined){
+      el.classList.add("done-all");
+      el.innerHTML=`<h3>🎉 Congrats! Tapos mo na ang 7 days!</h3><p>Ang galing mo. Marunong ka nang gumamit ng AI sa araw-araw.</p>
+        <div class="hero-btns"><a href="#roles" class="btn">Subukan ang ibang role</a><button class="btn ghost" id="restart">Ulitin mula Day 1</button></div>`;
+      document.getElementById("restart").onclick=()=>{localStorage.removeItem(key);render(id,true);};
+    } else {
+      el.classList.remove("done-all");
+      el.innerHTML=`<div class="today-head"><h3>✅ Gawin mo ngayon</h3><span class="daytag">Day ${next+1} of 7</span></div><p>${r.tasks[next]}</p>`;
+    }
+  };
+  bar(); today();
   plan.querySelectorAll(".timeline input").forEach(c=>c.onchange=()=>{
     const d=[...plan.querySelectorAll(".timeline input:checked")].map(x=>+x.dataset.i);
-    localStorage.setItem(key, JSON.stringify(d)); c.closest("li").classList.toggle("done", c.checked); bar();
+    localStorage.setItem(key, JSON.stringify(d)); c.closest("li").classList.toggle("done", c.checked); bar(); today();
   });
   if (scroll) plan.scrollIntoView({behavior:"smooth", block:"start"});
 }
