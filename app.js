@@ -90,7 +90,8 @@ document.getElementById("role-list").innerHTML = Object.entries(ROLES).map(([id,
   `<button class="role" data-id="${id}"><span>${r.icon}</span>${r.label}</button>`).join("");
 document.querySelectorAll(".role").forEach(b=>b.onclick=()=>render(b.dataset.id, true));
 if (CONFIG.showSponsorBanner){ const s=document.getElementById("sponsor-banner"); s.hidden=false; document.getElementById("sponsor-text").textContent=CONFIG.sponsorBannerText; }
-render(new URLSearchParams(location.search).get("role") || "student");
+const qRole = (new URLSearchParams(location.search).get("role") || "").toLowerCase().trim();
+render(Object.hasOwn(ROLES, qRole) ? qRole : "student");
 
 (function signup(){
   const f=document.getElementById("signup-form"), m=document.getElementById("signup-msg");
