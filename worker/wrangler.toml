@@ -1,5 +1,6 @@
 name = "ai-starter-ph-signup"
 main = "worker.js"
+preview_urls = false
 compatibility_date = "2026-10-01"
 
 [vars]

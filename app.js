@@ -1,6 +1,6 @@
 // ===== CONFIG: edit here. Add affiliate params to URLs later. =====
 const CONFIG = {
-  signupEndpoint: "", // set to the Worker URL to turn on signup. Empty = "Coming soon".
+  signupEndpoint: "https://ai-starter-ph-signup.aistarterph.workers.dev", // set to the Worker URL to turn on signup. Empty = form disabled.
   showSponsorBanner: false, // set true to show the top sponsor banner
   sponsorBannerText: "Example sponsor message here. (Placeholder)",
   tools: {
