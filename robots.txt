@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jecabs67.github.io/ai-starter-ph/sitemap.xml

@@ -14,7 +14,7 @@ const CONFIG = {
     grammarly:  { name: "Grammarly",  url: "https://www.grammarly.com/",      color: "#15c39a" }
   },
   // Paid placement per role. Placeholder until a real sponsor pays.
-  featured: { name: "Your Tool Here (Example)", color: "#f5b83d", url: "#", text: "Example lang ito. Dito lalabas ang featured tool ng partner namin." }
+  featured: { name: "Your Tool Here (Example)", color: "#f5b83d", url: "https://www.facebook.com/profile.php?id=61595449888614", cta: "I-message kami →", text: "Example lang ito. May AI tool ka? Mag-message sa Facebook page namin para ma-feature dito." }
 };
 
 const ROLES = {
@@ -43,10 +43,11 @@ const ROLES = {
 const initials = n => n.replace(/[^A-Z]/g,"").slice(0,2) || n.slice(0,2);
 
 function toolRow(t, note, sponsored){
+  const cta = t.cta || "Subukan →";
   const bg = sponsored ? "linear-gradient(135deg,#f5b83d,#ff7aa2)" : t.color;
   return `<div class="tool"><span class="badge" style="background:${bg}">${initials(t.name)}</span>
     <div class="info"><b>${t.name}</b><small>${note}</small></div>
-    <a class="try" href="${t.url}" target="_blank" rel="sponsored noopener">Subukan →</a></div>`;
+    <a class="try" href="${t.url}" target="_blank" rel="sponsored noopener">${cta}</a></div>`;
 }
 
 function render(id, scroll){

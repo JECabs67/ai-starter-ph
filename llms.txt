@@ -1,0 +1,34 @@
+# AI Starter PH
+
+> AI Starter PH is a free Taglish website for Filipinos who already know a little about AI but do not know where to start. You pick your role and get 3 free AI tools, 1 task to do today and a simple 7-day plan. No coding needed.
+
+Site: https://jecabs67.github.io/ai-starter-ph/
+Language: Taglish (Filipino and English)
+Audience: beginners in the Philippines
+Cost: free. Every tool we recommend has a free version.
+
+## Starter plans by role
+
+Each plan can be opened directly with a link.
+
+- [Student](https://jecabs67.github.io/ai-starter-ph/?role=student): ChatGPT to explain hard lessons, NotebookLM to turn notes into a reviewer, Perplexity for research with sources.
+- [VA / Freelancer](https://jecabs67.github.io/ai-starter-ph/?role=va): ChatGPT to draft emails and proposals, Grammarly to fix grammar, Canva for quick client graphics.
+- [Online Seller](https://jecabs67.github.io/ai-starter-ph/?role=seller): ChatGPT for Taglish captions, Canva for product photos and posters, CapCut for short TikTok and Reels videos.
+- [Gamer / Creator](https://jecabs67.github.io/ai-starter-ph/?role=gamer): CapCut for clips with auto captions, Canva for thumbnails, Gemini for content ideas and titles.
+- [Office Worker](https://jecabs67.github.io/ai-starter-ph/?role=office): Gemini for emails and Google Docs, ChatGPT for report and slide outlines, Grammarly to check grammar before sending.
+
+## Guides
+
+- [Paano magsimula sa AI (beginner guide)](https://jecabs67.github.io/ai-starter-ph/gabay/paano-magsimula-sa-ai.html): 6 simple steps for Filipino beginners, a simple prompt formula and privacy tips.
+
+## FAQ
+
+- Is it free? Yes. The site and the plans are free. The tools we recommend have free versions.
+- Do I need to code? No.
+- Can students use AI for school? Use it to understand lessons, make quizzes and check outlines. Write your own work and follow your school's rules.
+- Is it safe to share personal info with AI? Do not paste passwords, bank details, ID numbers or private client data.
+- Are there ads? Some links may be affiliate or sponsored. Sponsored items are always labeled "Sponsored".
+
+## Contact
+
+- [Facebook page](https://www.facebook.com/profile.php?id=61595449888614)

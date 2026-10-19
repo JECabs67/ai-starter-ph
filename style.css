@@ -74,3 +74,18 @@ footer .muted{color:#9aa0c0}.small{font-size:.82rem;color:#8a90ad;margin-top:8px
 @media(max-width:480px){.card{padding:18px}.tool{flex-wrap:wrap}.tool .info{flex:1 1 calc(100% - 60px)}.try{width:100%;text-align:center}}
 .today-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px}.today-head h3{margin:0}.daytag{background:#16a34a;color:#fff;font-weight:800;font-size:.8rem;padding:4px 10px;border-radius:999px}.done-all{background:linear-gradient(135deg,#f3f0ff,#ecfdf3)}button.btn{font:inherit;font-weight:700;cursor:pointer}
 .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.nav-links{display:flex;align-items:center;gap:14px}
+.nav-link{color:#141833;text-decoration:none;font-weight:600;font-size:.9rem}
+.faq{margin:48px auto 24px;max-width:760px}
+.faq h2{margin-bottom:16px}
+.faq details{background:#fff;border:1px solid #e6e8f5;border-radius:14px;padding:14px 18px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:700}
+.faq details p{margin-top:8px;color:#4a5072}
+.faq a,.guide a{color:#5b3fe0;font-weight:600}
+.guide{max-width:760px;margin:32px auto 48px}
+.guide h1{font-size:2rem}
+.guide h2{margin:28px 0 8px;font-size:1.35rem}
+.guide p,.guide li{margin-bottom:10px;color:#2c3152}
+.guide ol,.guide ul{padding-left:22px}
+.guide .box{background:#fff;border:1px solid #e6e8f5;border-radius:14px;padding:16px 18px;margin:14px 0}
+.guide .crumb{font-size:.9rem;color:#4a5072}
