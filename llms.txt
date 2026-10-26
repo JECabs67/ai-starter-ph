@@ -20,6 +20,12 @@ Each plan can be opened directly with a link.
 ## Guides
 
 - [Paano magsimula sa AI (beginner guide)](https://jecabs67.github.io/ai-starter-ph/gabay/paano-magsimula-sa-ai.html): 6 simple steps for Filipino beginners, a simple prompt formula and privacy tips.
+- [Libreng AI tools para sa students](https://jecabs67.github.io/ai-starter-ph/gabay/libreng-ai-tools-para-sa-students.html): 6 free AI tools for Filipino students (ChatGPT, Gemini, NotebookLM, Perplexity, Grammarly, Canva) with sample prompts and rules for using AI in school.
+- [All guides](https://jecabs67.github.io/ai-starter-ph/gabay/)
+
+## Use a plan with ChatGPT
+
+Each role plan has a "Kopyahin ang prompt" button. It copies a ready prompt that asks ChatGPT or Gemini to coach you through that role's 7-day plan one day at a time.
 
 ## FAQ
 

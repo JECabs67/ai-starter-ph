@@ -89,3 +89,6 @@ footer .muted{color:#9aa0c0}.small{font-size:.82rem;color:#8a90ad;margin-top:8px
 .guide ol,.guide ul{padding-left:22px}
 .guide .box{background:#fff;border:1px solid #e6e8f5;border-radius:14px;padding:16px 18px;margin:14px 0}
 .guide .crumb{font-size:.9rem;color:#4a5072}
+
+.coach textarea{width:100%;font:inherit;font-size:.9rem;padding:10px 12px;border:1px solid #e6e8f5;border-radius:10px;resize:vertical;margin:8px 0;background:#fafbff;color:#2c3152}
+.coach .hero-btns{margin-top:4px}

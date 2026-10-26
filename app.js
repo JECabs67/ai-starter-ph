@@ -63,8 +63,18 @@ function render(id, scroll){
       <div class="card"><h3>🧰 3 libreng AI tools</h3>${r.tools.map(t=>toolRow(CONFIG.tools[t[0]],t[1])).join("")}</div>
       <div class="card"><h3>📅 7-day path mo</h3><div class="progress"><div id="bar"></div></div>
         <ol class="timeline">${r.days.map((d,i)=>`<li class="${done.includes(i)?"done":""}"><input type="checkbox" id="d${i}" data-i="${i}" ${done.includes(i)?"checked":""}><label for="d${i}"><b>Day ${i+1}:</b> ${d}</label></li>`).join("")}</ol></div>
+      <div class="card wide coach"><h3>🤖 Gawing AI coach ang ChatGPT</h3><p class="muted">Kopyahin ang prompt na ito. I-paste sa ChatGPT o Gemini. Gagabayan ka nito araw-araw sa plan mo.</p>
+        <textarea id="coach-prompt" readonly rows="4"></textarea>
+        <div class="hero-btns"><button class="btn" id="copy-prompt" type="button">Kopyahin ang prompt</button><a class="btn ghost" href="https://chatgpt.com/" target="_blank" rel="noopener">Buksan ang ChatGPT →</a></div><small id="copy-msg" class="muted"></small></div>
       <div class="card featured wide"><h3><span class="tag">Sponsored</span>Featured tool</h3>${toolRow(f, f.text, true)}</div>
     </div>`;
+  const cp = document.getElementById("coach-prompt");
+  cp.value = `Tulungan mo akong matutong gumamit ng AI bilang ${r.label}. Ito ang 7-day plan ko:\n${r.days.map((d,i)=>`Day ${i+1}: ${d}`).join("\n")}\nTools ko: ${r.tools.map(t=>CONFIG.tools[t[0]].name).join(", ")}.\nIsang araw lang muna. Simulan natin sa Day 1. Sabihin mo nang step by step kung ano ang gagawin ko. Hintayin mo ang sagot ko bago tayo lumipat sa susunod na araw. Simple at Taglish lang.`;
+  document.getElementById("copy-prompt").onclick = async () => {
+    const msg = document.getElementById("copy-msg");
+    try { await navigator.clipboard.writeText(cp.value); msg.textContent = "Nakopya na! I-paste sa ChatGPT o Gemini."; }
+    catch { cp.focus(); cp.select(); msg.textContent = "Naka-select na ang prompt. I-copy mo lang."; }
+  };
   const bar = () => document.getElementById("bar").style.width = (plan.querySelectorAll(".timeline input:checked").length/7*100)+"%";
   const today = () => {
     const d=[...plan.querySelectorAll(".timeline input:checked")].map(x=>+x.dataset.i);
