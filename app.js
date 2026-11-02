@@ -18,7 +18,7 @@ const CONFIG = {
 };
 
 const ROLES = {
-  student: { icon:"🎓", label:"Student",
+  student: { icon:"🎓", label:"Student", guide:["gabay/libreng-ai-tools-para-sa-students.html","Libreng AI tools para sa students"],
     tools:[["chatgpt","Pang-explain ng mahirap na lesson."],["notebooklm","I-upload ang notes mo. Gagawa ito ng reviewer."],["perplexity","Research na may sources."]],
     tasks:["Kunin ang pinakamahirap na topic mo ngayon. Sabihin sa ChatGPT: \"Explain mo ito na parang Grade 6 ako.\"", "Buksan ang NotebookLM. I-upload ang notes o PDF ng isang subject. Itanong: \"Ano ang 5 pinaka importanteng points dito?\"", "Sabihin sa ChatGPT: \"Gawan mo ako ng 10-item quiz tungkol sa topic na ito.\" Sagutan mo ito nang walang kopya.", "Pumili ng topic para sa assignment mo. I-search ito sa Perplexity. Buksan ang 2 sources na binigay nito.", "I-paste ang outline ng essay mo sa ChatGPT. Itanong: \"Ano ang kulang dito?\" Ikaw pa rin ang magsusulat.", "Ilista ang lahat ng deadlines mo ngayong linggo. Ipagawa sa AI ang simpleng study schedule.", "Isipin kung aling tool ang pinaka nakatulong. Gamitin ulit ito bukas sa isang bagong lesson."],
     days:["Gumawa ng ChatGPT account at magtanong ng isang lesson.","I-upload ang notes mo sa NotebookLM.","Gumawa ng 10-item quiz gamit ang AI.","Mag-research ng isang topic sa Perplexity.","Ipa-check sa AI ang outline ng essay mo.","Gumawa ng study schedule para sa linggo.","Balikan kung ano ang pinaka nakatulong. Ulitin ito."] },
@@ -26,7 +26,7 @@ const ROLES = {
     tools:[["chatgpt","Pang-draft ng emails at proposals."],["grammarly","Para walang mali ang emails at docs mo."],["canva","Mabilis na graphics para sa client."]],
     tasks:["Gumawa ng account sa ChatGPT at Grammarly. Itanong sa ChatGPT: \"Paano mo ako matutulungan bilang VA?\"", "Sabihin sa ChatGPT: \"Gawan mo ako ng friendly email template para mag-follow up sa client.\" I-save ito.", "Kumuha ng email o doc na ipapasa mo sa client. I-check ito sa Grammarly at ayusin ang mga mali.", "Buksan ang Canva. Pumili ng template at gumawa ng isang social media post para sa sample client.", "Isulat ang 3 tasks na lagi mong ginagawa. Itanong sa ChatGPT kung paano ito mapapabilis.", "I-update ang profile mo sa freelance site. Idagdag ang \"AI-assisted writing at design\" sa skills.", "Maghanap ng isang gig na kailangan ng AI skill. Isulat ang proposal kasama ang ChatGPT. Ikaw ang mag-edit bago i-send."],
     days:["Gumawa ng account sa ChatGPT at Grammarly.","Gumawa ng email template para sa clients.","I-check sa Grammarly ang isang email o doc.","Gumawa ng social post design sa Canva.","Ilista ang 3 tasks mo na pwedeng bilisan ng AI.","I-update ang profile mo. Ilagay ang AI skills.","Mag-apply sa isang gig na may AI skill."] },
-  seller: { icon:"🛒", label:"Online Seller",
+  seller: { icon:"🛒", label:"Online Seller", guide:["gabay/ai-para-sa-online-sellers.html","AI para sa online sellers"],
     tools:[["chatgpt","Pang-sulat ng Taglish captions."],["canva","Product photos at posters."],["capcut","Short videos para sa TikTok at Reels."]],
     tasks:["Pumili ng isang product. Ipagawa sa ChatGPT ang 3 Taglish captions para dito.", "Kunan ng photo ang product mo. Linisin ang background gamit ang Canva.", "Buksan ang CapCut. Gumawa ng 15-second video ng product mo gamit ang isang template.", "Ilista ang 5 tanong na lagi sa'yo ng buyers. Ipagawa sa ChatGPT ang maikling sagot sa bawat isa.", "Itanong sa ChatGPT: \"Bigyan mo ako ng 5 promo ideas para sa maliit na online shop.\" Pumili ng isa.", "Mag-post ng isang caption o video na ginawa mo kasama ang AI.", "Tingnan ang posts mo ngayong linggo. Alamin kung alin ang may pinakamaraming views. Gumawa ulit ng ganun."],
     days:["Gumawa ng 3 captions para sa best seller mo.","Linisin ang product photo sa Canva.","Gumawa ng 15-second video sa CapCut.","Gumawa ng auto-reply template para sa FAQs.","Mag-isip ng promo idea kasama ang AI.","Mag-post ng isang AI-made na content.","Tingnan kung alin ang may pinakamaraming views."] },
@@ -57,7 +57,7 @@ function render(id, scroll){
   const done = JSON.parse(localStorage.getItem(key) || "[]");
   const plan = document.getElementById("plan");
   plan.innerHTML = `
-    <div class="plan-head"><h2>${r.icon} Starter plan mo: ${r.label}</h2><p class="muted">Simple lang. Isang hakbang kada araw.</p></div>
+    <div class="plan-head"><h2>${r.icon} Starter plan mo: ${r.label}</h2><p class="muted">Simple lang. Isang hakbang kada araw.</p>${r.guide?`<p class="guide-link"><a href="${r.guide[0]}">📖 Basahin ang gabay: ${r.guide[1]} →</a></p>`:""}</div>
     <div class="plan-grid">
       <div class="card today wide" id="today"></div>
       <div class="card"><h3>🧰 3 libreng AI tools</h3>${r.tools.map(t=>toolRow(CONFIG.tools[t[0]],t[1])).join("")}</div>
