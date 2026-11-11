@@ -23,12 +23,14 @@ Each plan can be opened directly with a link.
 - [Libreng AI tools para sa students](https://jecabs67.github.io/ai-starter-ph/gabay/libreng-ai-tools-para-sa-students.html): 6 free AI tools for Filipino students (ChatGPT, Gemini, NotebookLM, Perplexity, Grammarly, Canva) with sample prompts and rules for using AI in school.
 - [AI para sa online sellers](https://jecabs67.github.io/ai-starter-ph/gabay/ai-para-sa-online-sellers.html): 5 free ways for Filipino online sellers on Shopee, Lazada, TikTok Shop and Facebook to use AI for Taglish captions, product photos, short videos, buyer replies and promo ideas.
 - [AI para sa VA at freelancers](https://jecabs67.github.io/ai-starter-ph/gabay/ai-para-sa-va-at-freelancers.html): 6 free ways for Filipino virtual assistants and freelancers to use AI for client emails, proposals, grammar checks, client graphics, meeting notes and SOPs.
+- [AI para sa gamers at creators](https://jecabs67.github.io/ai-starter-ph/gabay/ai-para-sa-gamers-at-creators.html): 5 free ways for Filipino gamers and content creators to use AI for auto captions, thumbnails, video ideas, titles and short clips.
+- [AI para sa office workers](https://jecabs67.github.io/ai-starter-ph/gabay/ai-para-sa-office-workers.html): 5 free ways for Filipino office workers to use AI for emails, meeting notes, report outlines, grammar checks and spreadsheet formulas.
 - [All guides](https://jecabs67.github.io/ai-starter-ph/gabay/)
 
 ## Use a plan with ChatGPT
 
 Each role plan has a "Kopyahin ang prompt" button. It copies a ready prompt that asks ChatGPT or Gemini to coach you through that role's 7-day plan one day at a time.
-The Student, VA / Freelancer and Online Seller plans also link to their matching guide.
+Each role plan also links to its matching guide.
 
 ## FAQ
 
