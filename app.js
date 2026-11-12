@@ -18,23 +18,23 @@ const CONFIG = {
 };
 
 const ROLES = {
-  student: { icon:"🎓", label:"Student", guide:["gabay/libreng-ai-tools-para-sa-students.html","Libreng AI tools para sa students"],
+  student: { iconSvg:`<svg viewBox="0 0 44 44" width="44" height="44" aria-hidden="true"><rect width="44" height="44" rx="14" fill="#efeaff"/><path d="M8 12.5c4.5-1.5 8.5.2 14 3.5 5.5-3.3 9.5-5 14-3.5v19c-4.5-1.4-8.5.3-14 3.5-5.5-3.2-9.5-4.9-14-3.5z" fill="#fff" stroke="#7c5cff" stroke-width="1.8"/><path d="M22 16.5v18" stroke="#7c5cff" stroke-width="1.8"/><path d="M30 10l1.5 3.8 4 .2-3.1 2.6 1 3.8L30 18.3 26.6 20.4l1-3.8-3.1-2.6 4-.2z" fill="#ffd166"/></svg>`, icon:"🎓", label:"Student", guide:["gabay/libreng-ai-tools-para-sa-students.html","Libreng AI tools para sa students"],
     tools:[["chatgpt","Pang-explain ng mahirap na lesson."],["notebooklm","I-upload ang notes mo. Gagawa ito ng reviewer."],["perplexity","Research na may sources."]],
     tasks:["Kunin ang pinakamahirap na topic mo ngayon. Sabihin sa ChatGPT: \"Explain mo ito na parang Grade 6 ako.\"", "Buksan ang NotebookLM. I-upload ang notes o PDF ng isang subject. Itanong: \"Ano ang 5 pinaka importanteng points dito?\"", "Sabihin sa ChatGPT: \"Gawan mo ako ng 10-item quiz tungkol sa topic na ito.\" Sagutan mo ito nang walang kopya.", "Pumili ng topic para sa assignment mo. I-search ito sa Perplexity. Buksan ang 2 sources na binigay nito.", "I-paste ang outline ng essay mo sa ChatGPT. Itanong: \"Ano ang kulang dito?\" Ikaw pa rin ang magsusulat.", "Ilista ang lahat ng deadlines mo ngayong linggo. Ipagawa sa AI ang simpleng study schedule.", "Isipin kung aling tool ang pinaka nakatulong. Gamitin ulit ito bukas sa isang bagong lesson."],
     days:["Gumawa ng ChatGPT account at magtanong ng isang lesson.","I-upload ang notes mo sa NotebookLM.","Gumawa ng 10-item quiz gamit ang AI.","Mag-research ng isang topic sa Perplexity.","Ipa-check sa AI ang outline ng essay mo.","Gumawa ng study schedule para sa linggo.","Balikan kung ano ang pinaka nakatulong. Ulitin ito."] },
-  va: { icon:"💼", label:"VA / Freelancer", guide:["gabay/ai-para-sa-va-at-freelancers.html","AI para sa VA at freelancers"],
+  va: { iconSvg:`<svg viewBox="0 0 44 44" width="44" height="44" aria-hidden="true"><rect width="44" height="44" rx="14" fill="#eef2ff"/><rect x="8" y="16" width="28" height="18" rx="4" fill="#fff" stroke="#5b3fe0" stroke-width="1.8"/><path d="M17 16v-2.5a5 5 0 0 1 10 0V16" fill="none" stroke="#5b3fe0" stroke-width="1.8"/><path d="M8 24h28" stroke="#22a6ee" stroke-width="1.8"/></svg>`, icon:"💼", label:"VA / Freelancer", guide:["gabay/ai-para-sa-va-at-freelancers.html","AI para sa VA at freelancers"],
     tools:[["chatgpt","Pang-draft ng emails at proposals."],["grammarly","Para walang mali ang emails at docs mo."],["canva","Mabilis na graphics para sa client."]],
     tasks:["Gumawa ng account sa ChatGPT at Grammarly. Itanong sa ChatGPT: \"Paano mo ako matutulungan bilang VA?\"", "Sabihin sa ChatGPT: \"Gawan mo ako ng friendly email template para mag-follow up sa client.\" I-save ito.", "Kumuha ng email o doc na ipapasa mo sa client. I-check ito sa Grammarly at ayusin ang mga mali.", "Buksan ang Canva. Pumili ng template at gumawa ng isang social media post para sa sample client.", "Isulat ang 3 tasks na lagi mong ginagawa. Itanong sa ChatGPT kung paano ito mapapabilis.", "I-update ang profile mo sa freelance site. Idagdag ang \"AI-assisted writing at design\" sa skills.", "Maghanap ng isang gig na kailangan ng AI skill. Isulat ang proposal kasama ang ChatGPT. Ikaw ang mag-edit bago i-send."],
     days:["Gumawa ng account sa ChatGPT at Grammarly.","Gumawa ng email template para sa clients.","I-check sa Grammarly ang isang email o doc.","Gumawa ng social post design sa Canva.","Ilista ang 3 tasks mo na pwedeng bilisan ng AI.","I-update ang profile mo. Ilagay ang AI skills.","Mag-apply sa isang gig na may AI skill."] },
-  seller: { icon:"🛒", label:"Online Seller", guide:["gabay/ai-para-sa-online-sellers.html","AI para sa online sellers"],
+  seller: { iconSvg:`<svg viewBox="0 0 44 44" width="44" height="44" aria-hidden="true"><rect width="44" height="44" rx="14" fill="#fff6e8"/><path d="M14 16h16l1.5 18H12.5z" fill="#fff" stroke="#e08a14" stroke-width="1.8" stroke-linejoin="round"/><path d="M18 16v-2a4 4 0 0 1 8 0v2" fill="none" stroke="#e08a14" stroke-width="1.8"/><circle cx="19" cy="26" r="1.6" fill="#7c5cff"/><circle cx="25" cy="26" r="1.6" fill="#22a6ee"/></svg>`, icon:"🛒", label:"Online Seller", guide:["gabay/ai-para-sa-online-sellers.html","AI para sa online sellers"],
     tools:[["chatgpt","Pang-sulat ng Taglish captions."],["canva","Product photos at posters."],["capcut","Short videos para sa TikTok at Reels."]],
     tasks:["Pumili ng isang product. Ipagawa sa ChatGPT ang 3 Taglish captions para dito.", "Kunan ng photo ang product mo. Linisin ang background gamit ang Canva.", "Buksan ang CapCut. Gumawa ng 15-second video ng product mo gamit ang isang template.", "Ilista ang 5 tanong na lagi sa'yo ng buyers. Ipagawa sa ChatGPT ang maikling sagot sa bawat isa.", "Itanong sa ChatGPT: \"Bigyan mo ako ng 5 promo ideas para sa maliit na online shop.\" Pumili ng isa.", "Mag-post ng isang caption o video na ginawa mo kasama ang AI.", "Tingnan ang posts mo ngayong linggo. Alamin kung alin ang may pinakamaraming views. Gumawa ulit ng ganun."],
     days:["Gumawa ng 3 captions para sa best seller mo.","Linisin ang product photo sa Canva.","Gumawa ng 15-second video sa CapCut.","Gumawa ng auto-reply template para sa FAQs.","Mag-isip ng promo idea kasama ang AI.","Mag-post ng isang AI-made na content.","Tingnan kung alin ang may pinakamaraming views."] },
-  gamer: { icon:"🎮", label:"Gamer / Creator", guide:["gabay/ai-para-sa-gamers-at-creators.html","AI para sa gamers at creators"],
+  gamer: { iconSvg:`<svg viewBox="0 0 44 44" width="44" height="44" aria-hidden="true"><rect width="44" height="44" rx="14" fill="#e7fbff"/><rect x="7" y="16" width="30" height="16" rx="8" fill="#fff" stroke="#22a6ee" stroke-width="1.8"/><path d="M16 21.2v5.6M13.2 24h5.6" stroke="#7c5cff" stroke-width="1.6" stroke-linecap="round"/><circle cx="28" cy="22.5" r="1.6" fill="#16a34a"/><circle cx="31.5" cy="25.5" r="1.6" fill="#ff7aa2"/></svg>`, icon:"🎮", label:"Gamer / Creator", guide:["gabay/ai-para-sa-gamers-at-creators.html","AI para sa gamers at creators"],
     tools:[["capcut","Edit ng clips na may auto captions."],["canva","Thumbnails na pang-click."],["gemini","Ideas para sa content at titles."]],
     tasks:["Mag-download ng CapCut. Kunin ang best clip mo at lagyan ng auto captions.", "Buksan ang Canva. Gumawa ng thumbnail na may malaking text at mukha mo o ng character.", "Sabihin sa Gemini: \"Bigyan mo ako ng 10 video ideas para sa [game mo].\" Pumili ng 3.", "Ipagawa sa Gemini ang 3 title options at 5 hashtags para sa susunod mong video.", "Kumuha ng isang mahabang video mo. Gupitin sa CapCut ang pinaka exciting na 30 seconds.", "I-post ang short clip mo. Basahin ang comments at sagutin ang kahit 3.", "Itanong sa Gemini: \"Gawan mo ako ng simpleng content plan para sa 1 linggo.\" I-save ito."],
     days:["Mag-download ng CapCut at i-try ang auto captions.","Gumawa ng thumbnail sa Canva.","Humingi sa Gemini ng 10 video ideas.","Ipagawa ang title at hashtags sa AI.","Gumawa ng short clip mula sa long video.","Mag-post at tingnan ang reactions.","Gumawa ng simpleng content plan para sa susunod na linggo."] },
-  office: { icon:"🏢", label:"Office Worker", guide:["gabay/ai-para-sa-office-workers.html","AI para sa office workers"],
+  office: { iconSvg:`<svg viewBox="0 0 44 44" width="44" height="44" aria-hidden="true"><rect width="44" height="44" rx="14" fill="#eefbf3"/><path d="M12 34V14l10-4 10 4v20z" fill="#fff" stroke="#16a34a" stroke-width="1.8" stroke-linejoin="round"/><path d="M20 34v-8h8v8" fill="#eefbf3" stroke="#16a34a" stroke-width="1.6"/><rect x="16" y="16" width="3.2" height="3.2" rx=".6" fill="#7c5cff"/><rect x="21.4" y="16" width="3.2" height="3.2" rx=".6" fill="#7c5cff"/><rect x="26.8" y="16" width="3.2" height="3.2" rx=".6" fill="#7c5cff"/><rect x="16" y="22" width="3.2" height="3.2" rx=".6" fill="#22a6ee"/><rect x="26.8" y="22" width="3.2" height="3.2" rx=".6" fill="#22a6ee"/></svg>`, icon:"🏢", label:"Office Worker", guide:["gabay/ai-para-sa-office-workers.html","AI para sa office workers"],
     tools:[["gemini","Tulong sa emails at Google Docs."],["chatgpt","Pang-draft ng reports at slides outline."],["grammarly","Check ng grammar bago mag-send."]],
     tasks:["Kunin ang isang email na mahirap isulat. Ipa-draft sa Gemini. Ikaw ang mag-final check.", "Kumuha ng mahabang meeting notes. Ipa-summarize sa AI sa 5 bullet points at action items.", "Sabihin sa ChatGPT: \"Gawan mo ako ng outline para sa report tungkol sa [topic].\"", "I-paste ang isang doc mo sa Grammarly. Ayusin ang mga mali na nakita nito.", "Isipin ang isang spreadsheet task mo. Itanong sa AI kung anong formula ang gagamitin.", "Ilista ang 5 tasks na paulit-ulit mong ginagawa sa trabaho.", "Pumili ng isang task mula sa listahan. Gawin ito with AI simula ngayon."],
     days:["Mag-draft ng isang email gamit ang AI.","Ipa-summarize ang mahabang meeting notes.","Gumawa ng report outline sa ChatGPT.","I-check ang grammar ng doc mo sa Grammarly.","Gumawa ng formula sa spreadsheet sa tulong ng AI.","Ilista ang paulit-ulit mong tasks.","Pumili ng isang task na laging gagawin mo with AI."] }
@@ -63,7 +63,7 @@ function render(id, scroll){
     <div class="plan-grid">
       <div class="card today wide" id="today"></div>
       <div class="card"><h3>🧰 3 libreng AI tools</h3>${r.tools.map(t=>toolRow(CONFIG.tools[t[0]],t[1])).join("")}</div>
-      <div class="card"><h3>📅 7-day path mo</h3><div class="progress"><div id="bar"></div></div>
+      <div class="card"><h3>📅 7-day path mo</h3><div class="progress-wrap"><div class="progress"><div id="bar"></div></div><span class="progress-label" id="progress-label">0 / 7</span></div>
         <ol class="timeline">${r.days.map((d,i)=>`<li class="${done.includes(i)?"done":""}"><input type="checkbox" id="d${i}" data-i="${i}" ${done.includes(i)?"checked":""}><label for="d${i}"><b>Day ${i+1}:</b> ${d}</label></li>`).join("")}</ol></div>
       <div class="card wide coach"><h3>🤖 Gawing AI coach ang ChatGPT</h3><p class="muted">Kopyahin ang prompt na ito. I-paste sa ChatGPT o Gemini. Gagabayan ka nito araw-araw sa plan mo.</p>
         <textarea id="coach-prompt" readonly rows="4"></textarea>
@@ -77,7 +77,12 @@ function render(id, scroll){
     try { await navigator.clipboard.writeText(cp.value); msg.textContent = "Nakopya na! I-paste sa ChatGPT o Gemini."; }
     catch { cp.focus(); cp.select(); msg.textContent = "Naka-select na ang prompt. I-copy mo lang."; }
   };
-  const bar = () => document.getElementById("bar").style.width = (plan.querySelectorAll(".timeline input:checked").length/7*100)+"%";
+  const bar = () => {
+    const n=plan.querySelectorAll(".timeline input:checked").length;
+    document.getElementById("bar").style.width=(n/7*100)+"%";
+    const lab=document.getElementById("progress-label");
+    if(lab) lab.textContent=n+" / 7";
+  };
   const today = () => {
     const d=[...plan.querySelectorAll(".timeline input:checked")].map(x=>+x.dataset.i);
     const next=[0,1,2,3,4,5,6].find(i=>!d.includes(i)); const el=document.getElementById("today");
@@ -100,7 +105,7 @@ function render(id, scroll){
 }
 
 document.getElementById("role-list").innerHTML = Object.entries(ROLES).map(([id,r])=>
-  `<button class="role" data-id="${id}"><span>${r.icon}</span>${r.label}</button>`).join("");
+  `<button type="button" class="role" data-id="${id}"><span class="role-icon" aria-hidden="true">${r.iconSvg}</span><span class="role-label">${r.label}</span></button>`).join("");
 document.querySelectorAll(".role").forEach(b=>b.onclick=()=>render(b.dataset.id, true));
 if (CONFIG.showSponsorBanner){ const s=document.getElementById("sponsor-banner"); s.hidden=false; document.getElementById("sponsor-text").textContent=CONFIG.sponsorBannerText; }
 const qRole = (new URLSearchParams(location.search).get("role") || "").toLowerCase().trim();
@@ -122,4 +127,19 @@ render(Object.hasOwn(ROLES, qRole) ? qRole : "student");
     }catch{ m.textContent="May error. Subukan ulit mamaya."; }
     btn.disabled=false;
   };
+})();
+
+(function reveal(){
+  const els=document.querySelectorAll(".reveal");
+  if(!els.length) return;
+  let reduce=false;
+  try{ reduce=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches; }catch(e){}
+  if(reduce || typeof IntersectionObserver!=="function"){
+    els.forEach(el=>el.classList.add("on"));
+    return;
+  }
+  const io=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("on"); io.unobserve(e.target); } });
+  },{threshold:0.12, rootMargin:"0px 0px -24px 0px"});
+  els.forEach(el=>io.observe(el));
 })();
