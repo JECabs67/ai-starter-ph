@@ -25,6 +25,7 @@ Each plan can be opened directly with a link.
 - [AI para sa VA at freelancers](https://jecabs67.github.io/ai-starter-ph/gabay/ai-para-sa-va-at-freelancers.html): 6 free ways for Filipino virtual assistants and freelancers to use AI for client emails, proposals, grammar checks, client graphics, meeting notes and SOPs.
 - [AI para sa gamers at creators](https://jecabs67.github.io/ai-starter-ph/gabay/ai-para-sa-gamers-at-creators.html): 5 free ways for Filipino gamers and content creators to use AI for auto captions, thumbnails, video ideas, titles and short clips.
 - [AI para sa office workers](https://jecabs67.github.io/ai-starter-ph/gabay/ai-para-sa-office-workers.html): 5 free ways for Filipino office workers to use AI for emails, meeting notes, report outlines, grammar checks and spreadsheet formulas.
+- [AI para sa job seekers](https://jecabs67.github.io/ai-starter-ph/gabay/ai-para-sa-job-seekers.html): 6 free ways for Filipino job seekers and fresh grads to use AI for resumes, cover letters, JobStreet and LinkedIn profile summaries, mock interviews, company research and grammar checks, plus job scam red flags.
 - [All guides](https://jecabs67.github.io/ai-starter-ph/gabay/)
 
 ## Use a plan with ChatGPT
@@ -38,6 +39,7 @@ Each role plan also links to its matching guide.
 - Do I need to code? No.
 - Can students use AI for school? Use it to understand lessons, make quizzes and check outlines. Write your own work and follow your school's rules.
 - Is it safe to share personal info with AI? Do not paste passwords, bank details, ID numbers or private client data.
+- Can AI help me find a job? Yes. Use it to polish your resume and cover letter, write a JobStreet or LinkedIn summary and practice interviews. Keep everything true and never share SSS, TIN or ID numbers. See the job seekers guide.
 - Are there ads? Some links may be affiliate or sponsored. Sponsored items are always labeled "Sponsored".
 
 ## Contact
